@@ -2,11 +2,10 @@ using System;
 class guessNumber {
  static void Main(string[] args) {
     Random r = new Random(); 
-    playerGuess
     int val = r.Next(1, 50);
-    int guess;
+    int playerGuess;
     int allowedTries = 15; 
-    int numberOfTries = 1;
+    int numberOfTries = 0;
     bool correct = false;
 
     Console.WriteLine(" I'm Thinking of a number between 1 & 50.\n");
@@ -15,8 +14,9 @@ class guessNumber {
     {
     Console.Write("Guess: ");
     string input = Console.ReadLine();
+	numberOfTries++;
 
-    if (!int.TryParse(input, out guess))
+    if (!int.TryParse(input, out playerGuess))
     {
         Console.WriteLine("That's Not a Number..\n");
         continue; 
@@ -24,11 +24,11 @@ class guessNumber {
 
     if (playerGuess < val)
     {
-        Console.WriteLine ("Not Quite, The number I'm thinking of is Higher than that number.\n");
+        Console.WriteLine ($"Not Quite, The number I'm thinking of is Higher than {playerGuess}.\n");
     }
     else if (playerGuess > val)
     {
-        Console.WriteLine ("Not Quite, The number I'm thinking of is Lower than that number.\n");
+        Console.WriteLine ($"Not Quite, The number I'm thinking of is Lower than {playerGuess}.\n");
     }
     else 
     {
@@ -36,8 +36,14 @@ class guessNumber {
         Console.WriteLine("You guessed right, you win!");
         break;
     }
+    
+    if (numberOfTries == 0)
+    Console.WriteLine("You lose, try Again?\n"); 
+	
 
+	if (playerGuess != val)
     Console.WriteLine($"You have {allowedTries - numberOfTries} tries left. Please enter another number:\n");
+		
   }
  }
 }
