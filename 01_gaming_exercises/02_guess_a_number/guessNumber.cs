@@ -2,13 +2,13 @@ using System;
 class guessNumber {
  static void Main(string[] args) {
     Random r = new Random(); 
-    int val = r.Next(1, 50);
+    int val = r.Next(1, 51);
     int playerGuess;
     int allowedTries = 15; 
     int numberOfTries = 0;
     bool correct = false;
 
-    Console.WriteLine(" I'm Thinking of a number between 1 & 50.\n");
+    Console.WriteLine(" I'm thinking of a number between 1 & 50.\n");
 
     while (!correct)
     {
@@ -24,11 +24,11 @@ class guessNumber {
 
     if (playerGuess < val)
     {
-        Console.WriteLine ($"Not Quite, The number I'm thinking of is Higher than {playerGuess}.\n");
+        Console.WriteLine ($"Not quite, The number I'm thinking of is Higher than {playerGuess}.\n");
     }
     else if (playerGuess > val)
     {
-        Console.WriteLine ($"Not Quite, The number I'm thinking of is Lower than {playerGuess}.\n");
+        Console.WriteLine ($"Not quite, The number I'm thinking of is Lower than {playerGuess}.\n");
     }
     else 
     {
@@ -37,11 +37,11 @@ class guessNumber {
         break;
     }
     
-    if (numberOfTries == 0)
+    if (allowedTries == 0) 
     Console.WriteLine("You lose, try Again?\n"); 
 	
 
-	if (playerGuess != val)
+	if(playerGuess != val)
     Console.WriteLine($"You have {allowedTries - numberOfTries} tries left. Please enter another number:\n");
 		
   }
