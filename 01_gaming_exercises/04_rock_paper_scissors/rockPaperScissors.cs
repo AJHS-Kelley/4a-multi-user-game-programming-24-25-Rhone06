@@ -32,12 +32,13 @@ class rockPaperScissors {
     Console.WriteLine("Unable to determine your answer. Please try again. \n");
   }
 
-  Console.WriteLine("""
+  Console.WriteLine($"""
   +===========================================================+ 
-  |                                                           |
-  |     WELCOME TO THE ROCK, PAPER, SCISSORS CHALLENGE!       |
+  |                                                       *.  |
+  |   .       WELCOME TO ROCK, PAPER, SCISSORS! :)            |
+  |   *.                                                      |
   +===========================================================+
-  You will select from Rock, Paper, or Scissors. 
+  {playerName}, You will select from Rock, Paper, or Scissors. 
   The CPU will select one of those choices at random. 
   Then a winner will be determined using the following rules:
   -- Rock Beats Scissors
@@ -46,7 +47,42 @@ class rockPaperScissors {
 
   The winner will receive a point. 
   The first player to score 5 points will be declared the winner.
+  Wishing you the best {playerName}.
   """);
+
+
+
+  while (playerScore < 5 && cpuScore < 5)
+  {
+  // Print the scores. 
+  Console.WriteLine($"Your Score: {playerScore}\nCPU Score: {cpuScore}\n");
+
+  // Allow player to select R, P, S.
+  Console.WriteLine("Please select Rock, Paper, or Scissors. Type your answer and press ENTER.\n"); 
+  playerChoice = Console.ReadLine().ToLower();
+  if (playerChoice != "rock" && playerChoice != "paper" & playerChoice != "scissors")
+  {
+    Console.Writeline("Please choose rock, paper, or scissors. Type your answer and press ENTER.\n");
+    playerChoice = Console.ReadLine().ToLower(). 
+  }
+
+  // Allow CPU to select randomly.
+  Random rnd = new Random();
+  int cpuRand = rnd.Next(0,2); 
+
+  if (cpuRand == 0)
+  {
+    cpuChoice = "rock";
+  }
+  else if (cpuRand == 1)
+  {
+    cpuChoice = "paper";
+  }
+
+
+
+
+  }
 
   }
 }
