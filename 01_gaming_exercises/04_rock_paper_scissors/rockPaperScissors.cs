@@ -78,9 +78,21 @@ class rockPaperScissors {
   {
     cpuChoice = "paper";
   }
+  else if (cpuRand == 2)
+  {
+    cpuChoice = "scissors"
+  }
+  else
+  {
+    Console.WriteLine("Unable to determine CPU choice.\n");
+  }
+  Console.WriteLine("CPU choice" + cpuChoice);
 
-
-
+  // Compare the two choices and determine the winner.
+  if (playerChoice == "rock" && cpuChoice == "paper")
+  {
+    
+  }
 
   }
 
