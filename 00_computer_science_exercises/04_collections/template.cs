@@ -35,5 +35,12 @@ class Collections {
   Console.WriteLine("The lenght of the breakfastFoods array is: " + breakfastFoods.Length);
   // .Length is known as PROPERTY of the array.  
 
+  // Accessing Elments in the array with the index
+  Console.WriteLine("The first element in breakFastFoods is: " + breakfastFoods[0]);
+  // PRIN THE 2nd ELEMENT OF THE testScores array. 
+  Console.WriteLine("The second element in testScores is: " + testScore [1]);
+  //PRINT THE 3rd ELEMENT OF THE GPA array. 
+  Console.WriteLine("The third element in GPA is: " + GPA [2]);
+
   } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM THE LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
