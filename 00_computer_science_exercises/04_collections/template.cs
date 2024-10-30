@@ -21,6 +21,11 @@ class 04_Collections {
   int[] testScore = {0, 25, 50, 75, 90};
   double[] GPA = {0.27D, 1.99D, 4.02D, 0.0D, 3.25D};
 
+  // Print Array contents -- All Elements on Single Line
+  Console.WriteLine("The elements of each array are:\n");
+  Console.WriteLine("breakFastFoods: \n" + String.Join(", ", breakfastFoods));
+  Console.WriteLine(); // Print an empty line to the screen.
+
 
 
   } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM THE LEFT
