@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Collections; 
 
-class 04_Collections {
+class Collections {
   static void Main() {
 
   /*
@@ -26,7 +26,14 @@ class 04_Collections {
   Console.WriteLine("breakFastFoods: \n" + String.Join(", ", breakfastFoods));
   Console.WriteLine(); // Print an empty line to the screen.
 
+  // Print Array Elements on Seperate Lines
+  Console.WriteLine("The elements of each array are:\n");
+  Console.WriteLine("testScore: \n" + String.Join("\n", testScore));
+  Console.WriteLine(); // Print an empty line to the scree
 
+  // How long is my array? DETERMINING ARRAY LENGTH 
+  Console.WriteLine("The lenght of the breakfastFoods array is: " + breakfastFoods.Length);
+  // .Length is known as PROPERTY of the array.  
 
   } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM THE LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
