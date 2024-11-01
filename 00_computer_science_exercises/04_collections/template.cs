@@ -22,9 +22,9 @@ class Collections {
   double[] GPA = {0.27D, 1.99D, 4.02D, 0.0D, 3.25D};
   
   // Print Array contents -- All Elements on Single Line
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("breakFastFoods: \n" + String.Join(", ", breakfastFoods));
-  Console.WriteLine(); // Print an empty line to the screen.
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("breakFastFoods: \n" + String.Join(", ", breakfastFoods));
+  // Console.WriteLine(); // Print an empty line to the screen.
 
   /* Print Array Elements on Seperate Lines
   Console.WriteLine("The elements of each array are:\n");
@@ -54,5 +54,12 @@ class Collections {
   Console.WriteLine("breakFastFoods: \n" + String.Join(", ", breakfastFoods));
   Console.WriteLine(); // Print an empty line to the screen.
   */
+
+  // COMMON ERRORS WITH ARRAYS
+  //Console.WriteLine(breakfastFoods[99]);  // Index Out of Bounds -- Accessing index that does not exist in the array
+
+  // testScores[0] = "99"; // Error message "Cannot implicitly convert type `string' to `int'" -- Trying to put incorrect data type into array
+
+
   } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM THE LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
