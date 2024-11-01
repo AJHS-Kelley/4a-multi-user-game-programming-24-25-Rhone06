@@ -60,6 +60,22 @@ class Collections {
 
   // testScores[0] = "99"; // Error message "Cannot implicitly convert type `string' to `int'" -- Trying to put incorrect data type into array
 
+  // COMMON ARRAY METHODS --  Ways to work with the array data.
+  // Sorting an array
+  int[] intArr = {7, 0, -4, 9, 16, -9, 5, 23, 2, -1,};
+  string[] zooAnimals = {"Girrafe, Zebra, Monkey, Bird, Snake, Spider, Lizard, Elephant, Lion, Panther"};
+
+  Array.Sort(intArr); 
+  Array.Sort(zooAnimals);
+  // Array.Sort will sort string arrays ALPHABETICALLY A-Z and numerical arrays from least to greatest 
+  Console.WriteLine("The elements of each array are:\n");
+  Console.WriteLine("zooAnimals after Array.Sort(): \n" + String.Join(", ", zooAnimals));
+  Console.WriteLine(); // Print an empty line to the screen.
+
+  // Finding the MIN, MAX, AND SUM for numerical arrays.
+  Console.WriteLine("The MINIMUM value for intArr is: " + intArr.Min());
+  Console.WriteLine("The MAXIMUM value for intArr is: " + intArr.Max());
+  Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
 
   } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM THE LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
